@@ -18,13 +18,13 @@ class AccountServiceCoroutineImpl : AccountServiceImplBase() {
         return AccountResponse.newBuilder()
             .setId(request.id)
             .setNick("Jackie")
-            .build();
+            .build()
     }
 
     override suspend fun findById(request: Int32Value): AccountResponse {
         return AccountResponse.newBuilder()
             .setId(request.value)
             .setNick("Jackie")
-            .build();
+            .build()
     }
 }
