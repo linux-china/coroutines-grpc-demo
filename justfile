@@ -8,4 +8,8 @@ build: grpc-compile
 
 # testing with evans
 testing:
-   evans 
+   echo '1' | evans --call FindById
+
+# testing with evans
+testing_findAll:
+   echo '{ "pattern": "nick" }' | evans --call FindAll
