@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "AccountProto";
+
+package org.mvnsearch.service;
+
+import "google/protobuf/wrappers.proto";
+
+// The greeting service definition.
+service AccountService {
+    // Sends a greeting
+    rpc FindAccount (GetAccountRequest) returns (AccountResponse) {
+    }
+
+    rpc FindById (google.protobuf.Int32Value) returns (AccountResponse) {
+    }
+}
+
+// account message
+message AccountResponse {
+    int32 id = 1;
+    string nick = 2;
+}
+
+// The request message containing the user's name.
+message GetAccountRequest {
+    int32 id = 1;
+}
