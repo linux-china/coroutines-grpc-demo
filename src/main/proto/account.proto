@@ -15,6 +15,9 @@ service AccountService {
 
     rpc FindById (google.protobuf.Int32Value) returns (AccountResponse) {
     }
+
+    rpc FindAll (QueryAccountRequest) returns (stream AccountResponse);
+
 }
 
 // account message
@@ -26,4 +29,9 @@ message AccountResponse {
 // The request message containing the user's name.
 message GetAccountRequest {
     int32 id = 1;
+}
+
+// The query account request by pattern with nick
+message QueryAccountRequest {
+    string pattern = 1;
 }
