@@ -1,5 +1,5 @@
 [default]
-protoPath = ["src/main/proto","~/github/protocolbuffers/protobuf/src"]
-protoFile = ["account.proto"]
+#protoPath = ["src/main/proto","~/github/protocolbuffers/protobuf/src"]
+#protoFile = ["account.proto"]
 package = "org.mvnsearch.service"
 service = "AccountService"
