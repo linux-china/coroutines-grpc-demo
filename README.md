@@ -1,7 +1,7 @@
 Kotlin Coroutines gRPC Demo
 ===========================
 
-Implement gRPC service with Koltin Coroutines.
+Implement gRPC service with Kotlin Coroutines.
 
 # References
 
